@@ -111,11 +111,38 @@ body{
 }
 
 .main {
-    min-height: calc(100vh - 14rem);
+    min-height: calc(100vh - 17rem);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 6rem 10rem;
+    margin-bottom: 0;
+}
+
+.chats {
+    scroll-behavior:smooth;
+    overflow-y: auto; /* Allow vertical scrolling when content overflows */
+    width: 100%;
+    max-width: 70rem;
+    height: calc(100vh - 20rem);
+    display: flex;
+    flex-direction: column; /* Ensure that the children stack vertically */
+}
+
+.chat {
+    margin: 1rem;
+    padding: 2rem 3rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: flex-start;
+    text-align: justify
+
+}
+
+.chatImg {
+    object-fit: cover;
+    width: 3.5rem;
+    margin-right: 2rem;
+    border-radius: 0.5rem;
 }
 
 .chatfooter {
@@ -144,4 +171,8 @@ body{
 .inp>input, .send {
     background: transparent;
     border: none;
+}
+
+.chatfooter>p {
+    margin: 2rem 0;
 }
