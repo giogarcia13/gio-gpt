@@ -145,6 +145,12 @@ body{
     border-radius: 0.5rem;
 }
 
+.bot {
+    background: rgb(28, 30, 58, 1);
+    width: fit-content;
+    border-radius: 0.5rem;
+}
+
 .chatfooter {
     margin-top: auto;
     width: 100%;
