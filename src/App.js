@@ -15,7 +15,7 @@ function App() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
     {
-      text: "Hello I am Gio-GPT",
+      text: "Hello I am Gio-GPT a state-of-the-art language model developed by My Creator Gio. I was designed to understand and generate human-like text based on the input I receive. My purpose is to provide information, answer questions, generate text, and engage in text-based conversations on a wide range of topics. You can ask me about various subjects, seek explanations, get help with writing, or simply have a chat.",
       isBot: true,
     }
 ]);
@@ -58,7 +58,7 @@ function App() {
           <div className='inp'>
             <input type='text' placeholder='Send Message To Gio-GPT' value={input} onChange={(e)=>{setInput(e.target.value)}} /><button className="send" onClick={handleSend}><img src={sendBtn} alt="Send"/></button>
           </div>
-          <p>Gio-GPT is not completely finished and is prone to errors. Gio-GPT is trained on a real human brain, so there will be errors.</p>
+          <p>Gio-GPT is not completely finished and is prone to errors. Gio-GPT was trained off the creator's 'Gio' real human brain, so there will be errors. Thank you.</p>
         </div>
       </div>
     </div>

@@ -1,12 +1,12 @@
 const { Configuration, OpenAIApi } = require('openai');
 
-const configuration = new Configuration({ apikey: "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" });
+const configuration = new Configuration({ apikey: "open-ai-key-here" });
 const openai = new OpenAIApi(configuration);
 
-export async function sendMsgToOpenAI(message) {
+export async function sendMsgToOpenAI(text) {
     const res = await openai.createCompletion({
         model: 'text-davinci-003',
-        prompt: message,
+        prompt: text,
         temperature: 0.7,
         max_tokens: 256,
         top_p: 1,
